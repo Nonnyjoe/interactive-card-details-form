@@ -124,7 +124,7 @@ document.addEventListener('keyup', (e) => {
                     cvcError.textContent = "Wrong format, numbers only";
                     cvc.classList.add('is-invalid');
                 } else {
-                    cvcError.textContent = "";
+                    cvcError.textContent = "cannot be empty or less than 3 digits";
                     dispCvc.textContent = cvc1;
                     cvc.classList.remove('is-valid');
                     cvc.classList.add('is-invalid');
@@ -179,13 +179,14 @@ document.addEventListener('keyup', (e) => {
                     yearError.textContent = "Wrong format, numbers only";
                     year.classList.add('is-invalid');
                 } else {
-                    yearError.textContent = "";
+                    yearError.textContent = "cannot be empty or less than 4 digits";
                     dispCardExp.textContent = combined(month1, year1);
                     year.classList.remove('is-valid');
-                    year.classList.remove('is-invalid');
+                    year.classList.add('is-invalid');
                 };
             } else if (year1.length == 4 && year1 >= 1 && (!(year1.includes('e')))) {
                 dispCardExp.textContent = combined(month1, year1);
+                yearError.textContent = "";
                 year.classList.add('is-valid');
                 year.classList.remove('is-invalid');
                 yearCheck = true;
