@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Real time Interactive details</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="row m-0">
+            <div class="card-section col-lg-4 col-xxl-3">
+                <!-- back of card -->
+                <div class="card-back-container">
+                    <img src="./images/bg-card-back.png" class="Card-back" alt="card back" srcset="">
+                    <!-- cvc display -->
+                    <p class="cvc" id="dispCvc">000</p>
+                </div>
+                <!-- front of Card -->
+                <div class="card-front-container">
+                    <img src="./images/bg-card-front.png" class="Card-front" alt="Card front" srcset="">
+                    <!-- card details display -->
+                    <div class="cardDetails">
+                        <div class="row circles mb-4">
+                            <div class="span1 col-3">.</div>
+                            <div class="span2 col-3">.</div>
+                        </div>
+                        <p class="cardNumber" id="dispCardNumber">0000 0000 0000 0000</p>
+                        <div class="cardRestDetails row">
+                            <p class="cardName col-8" id="dispCardName">Jane Appleseed</p>
+                            <p class="cardExp col-2" id="dispCardExp">00/00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- form section starts -->
+            <div class="form-section col-lg-8 col-xxl-9" id="formSection">
+                <form class="row g-3 form ">
+                    <div class="mb-1">
+                        <label for="holderName" class="form-label label">Cardholder Name</label>
+                        <input type="text" class="form-control" id="holderName" placeholder="e.g. Jane Appleseed">
+                    </div>
+                    <div class="mb-1">
+                        <label for="cardNumber" class="form-label label"> Card Number </label>
+                        <input type="number" class="form-control" id="cardNumber" placeholder=" e.g. 1234 5678 9123 0000">
+                        <div class=" error">
+                            <p id="numberError"></p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <label for="month" class="form-label label month">Exp. Date </label>
+                        <input type="number" class="form-control" id="month" placeholder="MM">
+                        <div class=" error">
+                            <p id="monthError"></p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <label for="year" class="form-label label">(MM/YY)</label>
+                        <input type="number" class="form-control" id="year" placeholder="YY">
+                        <div class=" error">
+                            <p id="yearError"></p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <label for="cvc" class="form-label  label">CVC</label>
+                        <input type="number" class="form-control" id="cvc" placeholder="e.g. 123">
+                        <div class=" error">
+                            <p id="cvcError"></p>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <button type="submit" id="submit" class="col-12 btn submit" disabled>Confirm</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="thankYou noDisplay col-lg-8" id="thankYou">
+                <div class="circle mb-5 mb-lg-3">
+                    <img src="./images/icon-complete.svg" alt="" srcset="">
+                </div>
+                <h1 class="mb-3 mb-lg-2">
+                    THANK YOU!
+                </h1>
+                <p class="mb-4 mb-lg-3">
+                    We've added your card details
+                </p>
+                <button type="submit" id="Continue" class=" col-12 btn submit ">Continue</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+    <script src="main.js "></script>
+</body>
+
+</html>

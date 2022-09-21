@@ -1,0 +1,259 @@
+    body {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 18px;
+    }
+    
+    .main-container {
+        width: 100vw;
+        padding: 0%;
+        margin: 0%;
+    }
+    
+    .section {
+        padding: 0%;
+    }
+    
+    .card-section {
+        height: 35vh;
+        background-image: url(./images/bg-main-mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .cvc {
+        position: absolute;
+        top: 4.5rem;
+        right: 2.3rem;
+        z-index: 2;
+        color: hsl(0, 0%, 100%);
+    }
+    
+    .card-back-container,
+    .card-front-container {
+        height: 11rem;
+        width: 19.5rem;
+        overflow: hidden;
+        position: absolute;
+        top: 2.2rem;
+        right: 1.5rem;
+    }
+    
+    .card-front-container {
+        top: 8.5rem;
+        left: 1.5rem;
+    }
+    
+    .Card-back,
+    .Card-front,
+    .cardDetails {
+        height: 11rem;
+        width: 19.5rem;
+    }
+    
+    .cardNumber {
+        letter-spacing: 4px;
+    }
+    
+    .cardDetails {
+        z-index: 2;
+        position: absolute;
+        padding: 1rem;
+        top: 0rem;
+        color: hsl(0, 0%, 100%);
+        text-transform: uppercase;
+    }
+    
+    .circles {
+        padding-left: 1rem;
+    }
+    
+    .span1 {
+        height: 2.3rem;
+        width: 2.3rem;
+        background-color: #fff;
+        padding: 0%;
+        border-radius: 50%;
+    }
+    
+    .span2 {
+        height: 1.3rem;
+        width: 1.3rem;
+        padding: 0%;
+        border-radius: 50%;
+        color: transparent;
+        background-color: transparent;
+        border: 2px solid #fff;
+        margin-top: .5rem;
+        margin-left: .5rem;
+    }
+    
+    .form-section {
+        padding: 1.5rem;
+        padding-top: 6rem;
+    }
+    
+    .month {
+        margin-right: -2rem;
+    }
+    
+    input {
+        height: 3rem;
+        font-size: 1.3rem !important;
+    }
+    
+    .label {
+        text-transform: uppercase;
+        color: hsl(278, 68%, 11%);
+    }
+    
+    input::placeholder {
+        color: hsl(270, 3%, 87%) !important;
+    }
+    
+    .error {
+        color: rgb(151, 10, 10);
+        font-size: 14px;
+    }
+    
+    .error p {
+        margin: 0rem;
+    }
+    
+    .submit {
+        background: hsl(278, 68%, 11%);
+        height: 3.4rem;
+        margin-top: 1.5rem;
+        color: hsl(0, 0%, 100%);
+        font-size: 1.2rem !important;
+        border-radius: .5rem;
+    }
+    
+    .submit:hover {
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    
+    .thankYou {
+        text-align: center;
+        font-size: 18px;
+        color: hsl(279, 6%, 55%);
+        padding: 1.5rem;
+        padding-top: 6rem;
+    }
+    
+    .circle {
+        margin: auto;
+    }
+    
+    .thankYou h1 {
+        color: hsl(278, 68%, 11%);
+    }
+    
+    .thankYou p {
+        font-weight: 500;
+        font-size: 18px;
+    }
+    
+    .noDisplay {
+        display: none;
+    }
+    
+    @media screen and (min-width: 768px) {
+        .card-front-container {
+            top: 15rem;
+            left: 9.5rem;
+        }
+        .card-back-container {
+            top: 8rem;
+            left: 19.5rem;
+        }
+        @media screen and (min-height: 1100px) {
+            .card-front-container {
+                top: 18rem;
+                left: 9.5rem;
+            }
+            .card-back-container {
+                top: 11rem;
+                left: 19.5rem;
+            }
+        }
+    }
+    
+    @media screen and (min-width: 992px) {
+        .card-section {
+            height: 100vh;
+            background-image: url(./images/bg-main-desktop.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .form-section {
+            height: 100vh;
+            padding: 7rem 11rem;
+            box-sizing: border-box !important;
+        }
+        .card-front-container {
+            top: 5rem;
+            left: 5.5rem;
+        }
+        .card-back-container {
+            top: 18rem;
+            left: 8.5rem;
+        }
+        .thankYou {
+            padding-top: 9rem;
+        }
+        #Continue {
+            width: 20rem;
+        }
+    }
+    
+    @media screen and (min-width: 1200px) {
+        .card-section {
+            height: 100vh;
+            background-image: url(./images/bg-main-desktop.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .form-section {
+            height: 100vh;
+            padding: 12rem 15rem;
+            box-sizing: border-box !important;
+        }
+        .thankYou {
+            padding-top: 15rem;
+        }
+        .card-front-container {
+            top: 10rem;
+            left: 10.5rem;
+        }
+        .card-back-container {
+            top: 24rem;
+            left: 15.5rem;
+        }
+    }
+    
+    @media screen and (min-width: 1400px) {
+        .card-section {
+            height: 100vh;
+            background-image: url(./images/bg-main-desktop.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .form-section {
+            height: 100vh;
+            padding: 12rem 22rem;
+            box-sizing: border-box !important;
+        }
+        .thankYou {
+            padding-top: 15rem;
+        }
+        .card-front-container {
+            top: 10rem;
+            left: 10.5rem;
+        }
+        .card-back-container {
+            top: 24rem;
+            left: 15.5rem;
+        }
+    }
